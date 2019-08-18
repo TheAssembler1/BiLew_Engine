@@ -1,16 +1,10 @@
 package game;
 
-import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
-
-import core.Main;
 
 public abstract class User_Game{
 
@@ -19,11 +13,15 @@ public abstract class User_Game{
 	public static int user_window_ysize = 500;
 	public static String user_window_title = "Title";
 	
-	//defautl BiLew_Engine sprite
+	//default BiLew_Engine sprite
 	static BufferedImage blue;
 	
 	public static void Sprites() throws IOException {
-		blue = ImageIO.read(new File("/home/noah/eclipse-workspace/BilLew_Engine/src/game/blue.png"));
+		
+		//BiLew_Engine defualt sprite
+		blue = ImageIO.read(new File("src/game/Sprites/blue.png"));
+		
+		
 	}
 	
 	//render things here
