@@ -53,6 +53,9 @@ public class Main extends JPanel{
 	
 	//entry point to the program
 	public static void main(String[] args) throws InterruptedException, IOException {
+		//stating version number
+		System.out.println("MESSAGE::VERSION .01");
+		
 		//starting the program message
 		System.out.println("MESSAGE::STARTED PROGRAM");
 		
