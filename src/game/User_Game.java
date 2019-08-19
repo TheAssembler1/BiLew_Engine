@@ -5,6 +5,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import core.Input;
+import core.Object;
 
 public abstract class User_Game{
 
@@ -12,21 +14,22 @@ public abstract class User_Game{
 	public static int user_window_xsize = 500;
 	public static int user_window_ysize = 500;
 	public static String user_window_title = "Title";
+
 	
 	//default BiLew_Engine sprite
 	static BufferedImage blue;
 	
 	public static void Sprites() throws IOException {
-		
+
 		//BiLew_Engine defualt sprite
 		blue = ImageIO.read(new File("src/game/Sprites/blue.png"));
-		
-		
+
+			
 	}
 	
 	//render things here
 	public static void Draw(Graphics2D g2d) {
-		g2d.drawImage(blue, 50, 50, null);
+		g2d.drawImage(blue, 0, 0, null);
 	}
 	
 	//do logic here

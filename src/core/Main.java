@@ -2,7 +2,6 @@ package core;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
@@ -24,12 +23,12 @@ public class Main extends JPanel{
 		KeyListener listener = new KeyListener() {
 			@Override
 			public void keyTyped(KeyEvent e) {
-				Input.Key_Just_Pressed(e);
+				//Input.Key_Just_Pressed(e);
 			}
 
 			@Override
 			public void keyPressed(KeyEvent e) {
-				Input.Key_Pressed(e);
+				//Input.Key_Pressed(e);
 			}
 
 			@Override
@@ -47,7 +46,6 @@ public class Main extends JPanel{
 		super.paint(g);
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
-		//this is the users paint method
 		User_Game.Draw(g2d);
 		//syncrhonizes the graphics state
 		Toolkit.getDefaultToolkit().sync();
