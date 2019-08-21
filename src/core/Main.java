@@ -7,7 +7,6 @@ import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.IOException;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import game.User_Game;
@@ -53,6 +52,9 @@ public class Main extends JPanel{
 	
 	//entry point to the program
 	public static void main(String[] args) throws InterruptedException, IOException {
+		//stating version number
+		System.out.println("MESSAGE::VERSION .01");
+		
 		//starting the program message
 		System.out.println("MESSAGE::STARTED PROGRAM");
 		

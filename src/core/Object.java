@@ -1,11 +1,13 @@
 package core;
 
 import java.awt.Graphics;
+import javax.swing.JFrame;
 
-public abstract class Object {
+@SuppressWarnings("serial")
+public abstract class Object extends JFrame{
 	
-	//used to draw object
-	public void Draw(Graphics g) {}
+    @Override
+    public void paint(Graphics g) {}
 	
 	//for updating player setttings
 	public void Update() {}
