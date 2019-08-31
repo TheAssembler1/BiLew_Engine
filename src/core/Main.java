@@ -13,9 +13,6 @@ public class Main{
 	public static JFrame jframe;
 	public static JPanel jpanel;
 	
-	int x = 5;
-	int enemyx = 5;
-	
 	public static void main(String[] args) throws InterruptedException, IOException {
 		//this is the user start method
 		User_Game.start();

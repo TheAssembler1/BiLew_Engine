@@ -14,7 +14,6 @@ public class Drawing extends JPanel{
 	
 	public Drawing() {
 		Main.jframe.add(this);
-		Main.jframe.setVisible(true);
 	}
 
 	@Override
