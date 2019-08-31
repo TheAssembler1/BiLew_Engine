@@ -17,7 +17,8 @@ public class Main{
 	public static void main(String[] args) throws InterruptedException {
 		//creating frame
 		Window window = new Window("BiLewEngine", Preferences.user_window_width, Preferences.user_window_height);
-		
+		//gets the input
+		new KeyboardInput();
 		//creating game loop
 		while (true) {
 			User_Game.Logic();
