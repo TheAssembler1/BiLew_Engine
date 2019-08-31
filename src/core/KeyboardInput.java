@@ -9,9 +9,9 @@ import javax.swing.JPanel;
 public class KeyboardInput implements KeyListener {
 	
 	//variables that equals keycode
-	static private KeyEvent e_key_just_pressed;
-	static private KeyEvent e_key_pressed;
-	static private KeyEvent e_key_released;
+	static private int e_key_just_pressed;
+	static private int e_key_pressed;
+	static private int e_key_released;
 	
     public KeyboardInput() {
         Main.jframe.addKeyListener(this);
@@ -20,17 +20,17 @@ public class KeyboardInput implements KeyListener {
 
     @Override
     public void keyTyped(KeyEvent keycode) {
-    	e_key_just_pressed = keycode;
+    	e_key_just_pressed = keycode.getKeyCode();
     }
 
     @Override
     public void keyPressed(KeyEvent keycode) {
-    	e_key_pressed = keycode;
+    	e_key_pressed = keycode.getKeyCode();
     }
 
     @Override
     public void keyReleased(KeyEvent keycode) {
-    	e_key_released = keycode;
+    	e_key_released = keycode.getKeyCode();
     }
     
 
@@ -38,17 +38,17 @@ public class KeyboardInput implements KeyListener {
 	/*-------------------------*/
     
     //says if key has been hit once
-    public static KeyEvent KeyJustPressed() {
+    public static int KeyJustPressed() {
     	return e_key_just_pressed;
     }
 
     //says if key has been held down
-    public static KeyEvent KeyPressed() {
+    public static int KeyPressed() {
     	return e_key_pressed;
     }
     
     //says if key has been released
-    public static KeyEvent KeyReleased() {
+    public static int KeyReleased() {
     	return e_key_released;
     }
 }

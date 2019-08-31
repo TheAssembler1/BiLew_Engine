@@ -16,6 +16,8 @@ public class Window{
 		Main.jframe.setSize(width, height);
         Main.jframe.setLocationRelativeTo(null);
         Main.jframe.add(Panel());
+		//draws the character
+		Drawing draw = new Drawing(); 
 		Main.jframe.setVisible(true);
 	}
 
