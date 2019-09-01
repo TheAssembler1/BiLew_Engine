@@ -20,12 +20,21 @@ public class Main{
 		Window window = new Window("BiLewEngine", Preferences.user_window_width, Preferences.user_window_height);
 		//gets the input
 		new KeyboardInput();
+		//FPS variables
+		long lastTime = System.nanoTime();
+		double ns = 1000000000 / Preferences.user_fps;
+		double delta = 0;
 		//creating game loop
 		while (true) {
 			User_Game.Logic();
 			jframe.repaint();
 			//FPS ;
-			Thread.sleep(1000/Preferences.user_fps);
+			long now = System.nanoTime();
+			delta += (now - lastTime) / ns;
+			lastTime = now;
+			if(delta >= 1) {
+				delta--;
+			}
 		}
 	}
 
