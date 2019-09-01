@@ -16,7 +16,7 @@ public class Object {
 	private BufferedImage file;
 	
 	//fill in this when you instantiate object
-	public Object(int x, int y, int width, int height, String filepath) throws IOException{
+	public Object(int x, int y, int width, int height, String filepath) throws IOException {
 		this.x = x;
 		this.y = y;
 		this.width = width;
@@ -24,16 +24,18 @@ public class Object {
 		this.file = ImageIO.read(new File(filepath));
 		if(this.file == null) {
 			System.out.println("MESSAGE::FAILED TO FIND FILE");
+			
+			
 		}
 	}
 	
 	
 	//gets the x and y
-	public float GetPosX() {
+	public int GetPosX() {
 		return this.x;
 	}
 	
-	public float GetPosY() {
+	public int GetPosY() {
 		return this.y;
 	}
 	

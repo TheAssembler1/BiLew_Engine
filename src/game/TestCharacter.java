@@ -9,3 +9,7 @@ public class TestCharacter extends Object {
 		// TODO Auto-generated constructor stub
 	}
 }
+
+
+
+
