@@ -24,7 +24,8 @@ public class Main{
 		while (true) {
 			User_Game.Logic();
 			jframe.repaint();
-			Thread.sleep(10);
+			//FPS ;
+			Thread.sleep(1000/Preferences.user_fps);
 		}
 	}
 
