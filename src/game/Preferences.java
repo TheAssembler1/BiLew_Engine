@@ -8,6 +8,6 @@ public abstract class Preferences {
 	public static int user_window_height = 500;
 	
 	//FPS preferences for user
-	public static int user_fps = 1;
+	public static int user_fps = 60;
 	
 }
