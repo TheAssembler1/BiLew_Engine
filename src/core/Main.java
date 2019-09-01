@@ -9,6 +9,11 @@ import game.*;
 
 public class Main{
 
+	//Delta Time
+	public static long last_time = System.nanoTime();
+	public static double ns = 1000000000/(double)Preferences.user_fps;
+	public static double delta = 0;
+	
 	//main frame and panel
 	public static JFrame jframe;
 	public static JPanel jpanel;
@@ -20,19 +25,15 @@ public class Main{
 		Window window = new Window("BiLewEngine", Preferences.user_window_width, Preferences.user_window_height);
 		//gets the input
 		new KeyboardInput();
-		//FPS variables
-		long lastTime = System.nanoTime();
-		double ns = 1000000000 / Preferences.user_fps;
-		double delta = 0;
 		//creating game loop
 		while (true) {
-			User_Game.Logic();
-			jframe.repaint();
 			//FPS ;
-			long now = System.nanoTime();
-			delta += (now - lastTime) / ns;
-			lastTime = now;
-			if(delta >= 1) {
+			long time = System.nanoTime();
+			delta += (int)(time - last_time)/ns;
+			last_time = time;
+			if(delta>=1) {
+				User_Game.Logic();
+				jframe.repaint();
 				delta--;
 			}
 		}

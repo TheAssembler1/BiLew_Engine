@@ -41,8 +41,8 @@ public class Object {
 	
 	//increases the x and y
 	public void ChangePosXY(int xchange, int ychange) {
-		this.x += xchange;
-		this.y += ychange;
+		this.x += xchange * Main.delta;
+		this.y += ychange * Main.delta;
 	}
 	
 	//sets the x and y
