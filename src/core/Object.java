@@ -38,7 +38,7 @@ public class Object {
 	}
 	
 	//increases the x and y
-	public void IncreasePosXY(int xchange, int ychange) {
+	public void ChangePosXY(int xchange, int ychange) {
 		this.x += xchange;
 		this.y += ychange;
 	}
@@ -59,9 +59,5 @@ public class Object {
 	
 	public void Draw(Graphics2D g) {
 		g.drawImage(this.file, this.x, this.y, this.width, this.height, null);
-	}
-	
-	public void Logic() {
-		
 	}
 }

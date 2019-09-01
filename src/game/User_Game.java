@@ -1,6 +1,7 @@
 package game;
 
 import java.awt.Graphics2D;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import core.KeyboardInput;
 
@@ -25,7 +26,6 @@ public class User_Game {
 		a.Draw(g);
 	}
 	
-	//user does his logic here
 	public static void Logic() {
 
 	}
