@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class Object {
+public class StillObject {
 	
 	private int x;
 	private int y;
@@ -16,7 +16,7 @@ public class Object {
 	private BufferedImage file;
 	
 	//fill in this when you instantiate object
-	public Object(int x, int y, int width, int height, String filepath) throws IOException {
+	public StillObject(int x, int y, int width, int height, String filepath) throws IOException {
 		this.x = x;
 		this.y = y;
 		this.width = width;

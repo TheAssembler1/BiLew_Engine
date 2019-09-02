@@ -12,8 +12,8 @@ public class User_Game {
 	static TestCharacter character;
 	static TestCharacter a;
 	public static void start() throws IOException {
-		character = new TestCharacter(0, 0);
-		a = new TestCharacter(100, 100);
+		character = new TestCharacter(1200, 0);
+		a = new TestCharacter(0, 100);
 		
 	}
 	
@@ -27,12 +27,7 @@ public class User_Game {
 	}
 	
 	public static void Logic() {
-		if(KeyboardInput.A_KEY_JUST_PRESSED) {
-			a.ChangePosXY(2, 0);
-		}
-		else if (KeyboardInput.Z_KEY_JUST_PRESSED) {
-			a.ChangePosXY(-2, 0);
-		}
+
 	}
     
 }
