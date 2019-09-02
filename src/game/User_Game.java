@@ -28,6 +28,12 @@ public class User_Game {
 	
 	public static void Logic() {
 
+		if(KeyboardInput.A_KEY_JUST_PRESSED) {
+			a.ChangePosXY(2, 0);
+		}
+		if (KeyboardInput.Z_KEY_JUST_PRESSED) {
+			a.ChangePosXY(-2, 0);
+		}
 	}
     
 }
